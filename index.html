@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Miguel Donado</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+
+    <h1>Miguel Donado - Data Scientist</h1>
+    <div class="social-icons">
+    <!-- Este es un comentario en HTML.
+      <a href="https://twitter.com/donatopy_" target="_blank"><img src="logotwitter.png" alt="Twitter"></a>
+      <a href="https://www.twitch.tv/donatopy" target="_blank"><img src="logotwitch.png" alt="Twitch"></a>   -->
+      <a href="https://www.linkedin.com/in/miguel-donado-mazarr%C3%B3n-g%C3%B3mez-98941212b/" target="_blank"><img src="logolinkedin.png" alt="LinkedIn"></a>
+    </div>
+  </header>
+  
+  <main>
+    <section id="client-reviews">
+      <h2>Client Reviews</h2>
+      <div class="review">
+        <p>"Miguel's talent and creativity saved our project. We were stuck in a complex task, feeling hopeless, but he found the best solution. His out-of-the-box thinking is impressive. Highly recommended freelancer – we'll hire Miguel again!" </p>
+        <p> Azeem Noor, Azeem Enterprises</p>
+      </div>      
+      <div class="review">
+        <p>"Great experience working with Miguel! The task that probably turned out to be a bit more difficult than we had anticipated but he stuck with it and delivered the result I was looking for. Highly recommended!" </p>
+        <p> Neil Berkman, Xuku LLC</p>
+      </div>
+    </section>
+
+    <section id="Portfolio">
+      <h2>Portfolio</h2>
+      <div class="project" onclick="window.location.href='https://example.com/project1';">
+        <img src="project1_image.jpg" alt="Project 1" title="Description of Project 1">
+      </div>
+      <div class="project" onclick="window.location.href='https://example.com/project2';">
+        <img src="project2_image.jpg" alt="Project 2" title="Description of Project 2">
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Get in touch</h2>
+      <form action="procesar_formulario.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <input type="submit" value="Submit">
+      </form>
+    </section>
+  </main>
+  
+  <footer>
+    <p>© 2024 Miguel Donado</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
