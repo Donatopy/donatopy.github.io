@@ -1,105 +1,321 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
+    background-color: #15202b;
+    color: #ADD8E6;
     margin: 0;
 }
 
-header {
-    background-color: #52057b;
-    padding: 1rem;
-    text-align: right;
-    display: flex;
-    justify-content: space-between;
-}
-
-header h1 {
-    color: #fff;
-    font-size: 1.5rem;
-}
-
-.social-icons {
-    display: flex;
-    align-items: center;
-}
-
-.social-icons a {
-    margin-left: 10px;
-}
-
-.social-icons img {
-    width: 32px;
-    height: 32px;
-}
 
 main {
     padding: 1rem;
     text-align: center;
 }
 
-#client-reviews {
-    margin-bottom: 30px;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px;
+  margin-left: 10px; 
 }
 
-.review {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 20px;
+
+  .social-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2px;
+    margin-right: 10px; 
 }
 
-.review p {
+
+
+.social-icons img {
+    width: 48px;
+    height: 48px;
+    margin-right: 10px; 
+    margin-top: 10px; 
+
+}
+
+/* Botones de navegación */
+.nav-buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.nav-buttons a {
+  color: #ADD8E6; /* Color del texto de los botones */
+  text-decoration: none; /* Sin subrayado por defecto */
+  margin-right: 20px; /* Espacio entre los botones */
+  font-size: 18px; /* Tamaño del texto */
+  font-weight: bold;
+}
+
+.nav-buttons a:hover {
+  text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+
+
+/* PRESENTACION */
+
+  .mi-nombre {
+    font-size: 64px;
+    margin-bottom: 1px; 
+    color: #6fda44;
+    text-align: center; /* Centra el texto */
+
+}
+
+.mi-puesto {
+    font-size: 30px;    
+    margin-top: -20px; /* Ajusta el espacio entre el nombre y el subtexto */
+
+}
+
+
+.mi-mission {
+    font-size: 20px;    
+    font-style: italic;
+    font-weight: bold;    
+    margin-bottom: 100px; 
+
+ }
+
+.info-container {
+    max-width: 1200px; /* Ajusta este valor según tus necesidades */
+    margin: 0 auto; /* Esto centra el contenedor horizontalmente */
+}
+
+.info {
+    display: flex;
+    justify-content: left; /* Ahora los grupos de información estarán centrados */
+    margin-top: 10px;
+}
+
+
+.grupo-info {
+    font-size: 30px;    
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 0 20px; /* Agrega margen a cada grupo */
+    margin-bottom: 200px; 
+}
+
+.iconos {
     margin-bottom: 10px;
 }
 
+.iconos img {
+    width: 80px; /* Ajusta el tamaño de los iconos */
+}
+
+.textos {
+    margin-bottom: 10px;
+}
+
+.titulo {
+    font-size: 30px;        
+    font-weight: bold;
+    margin: 0;
+}
+
+.parrafos {
+    font-size: 22px;        
+    max-width: 400px; /* Ajusta el ancho máximo según tus necesidades */
+    text-align: left;
+    line-height: 1.2; /* Ajusta el espacio entre líneas de los párrafos */  
+    text-align: justify; /* Alinea el texto de forma justificada */
+
+}
+.resaltado {
+    color: #6FDA44; /* Cambia esto al color que desees */
+    font-weight: bold;
+
+}
+
+
+/* Proyectos */
+#projects {
+  text-align: center;
+}
+
 .projects {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  max-width: 1000px; /* Define un ancho máximo para los proyectos */
+  margin: 0 auto; /* Centra los proyectos horizontalmente */
 }
 
 .project {
-    width: 48%;
+  width: calc(50% - 20px); /* Ajusta el ancho de cada proyecto */
+  margin: 0 10px; /* Añade un pequeño margen entre los proyectos */
+  display: inline-block; /* Permite que los proyectos se muestren en línea */
+  vertical-align: top; /* Alinea los proyectos en la parte superior */
+  background-color: #1b2938;
+  padding: 1rem;
+  margin-bottom: 1rem; /* Ajusta el margen inferior */
+  border: 1px solid #6FDA44;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+
+.project-image {
+  width: 30%; /* Establece el ancho de la imagen al 100% del contenedor */
+  max-width: 100%; /* Garantiza que la imagen no se desborde del contenedor */
+  height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción de aspecto */
+  border-radius: 8px; /* Opcional: agrega bordes redondeados a la imagen */
+}
+
+.project-info {
+  padding: 1rem 0;
+  text-align: left;
+}
+
+.project-info h3 {
+  color: #6FDA44;
+  margin-bottom: 0.5rem;
+}
+
+.project-info p {
+  color: #ADD8E6;
+  margin-bottom: 1rem;
+}
+
+.project-link {
+  color: #6FDA44;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+.project-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.technologies {
+  display: flex;
+  flex-direction: column; /* Cambia la dirección de la disposición a columna */
+  align-items: flex-end; /* Alinea los elementos al final del contenedor */
+}
+
+.technologies img {
+  width: 80px; /* Ajusta el tamaño de los iconos según sea necesario */
+  margin-bottom: 5px; /* Añade un pequeño espacio entre los iconos */
+}
+
+
+
+/* ABOUT ME */
+
+.about-me {
+    text-align: left;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin-right: 360px;
+  }
+  
+  .about-me .text {
+    display: flex;
+    align-items: center;
+    max-width: 800px; /* Ancho máximo del contenido */
+  }
+  
+  .about-me .profile-image {
+    width: 200px;
+    margin-right: 20px;
+  }
+  
+  .about-me .bio {
+    flex-grow: 1; 
+
+  }
+  
+  .about-me h2 {
+    color: #6fda44;
+  }
+
+  
+/* 
+TIMELINE 
+  .experience {
+    text-align: left;
+    margin-bottom: 50px;
+  }
+  
+  .experience h2 {
+    color: #6FDA44;
+  }
+  
+  .timeline {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .event {
+    display: flex;
     margin-bottom: 20px;
+  }
+  
+  .date {
+    font-weight: bold;
+    width: 150px;
+  }
+  
+  .description {
+    margin-left: 20px;
+  }
+  
+  .details {
+    margin-left: auto;
+  }
+  
+*/
+
+
+/* TECHS*/
+
+
+/* CLIENT REVIEWS */
+
+.flag 
+{
+    width: 30px;
+    vertical-align: middle;
+    margin-left: 5px;
 }
 
-#contact {
-    margin-top: 30px;
+
+#client-reviews {
+  margin-bottom: 30px;
+  text-align: center; /* Centrar el contenido del contenedor */
 }
 
-form {
-    max-width: 400px;
-    margin: 0 auto;
+.review {
+  border: 1px solid #6fda44;
+  padding: 10px;
+  margin-bottom: 20px;
+  max-width: 1200px; /* Ajusta el ancho según tus necesidades */
+  margin-left: auto;
+  margin-right: auto; /* Centrar las reseñas */
+  background-color: #1b2938; /* Fondo opcional para mayor contraste */
 }
 
-label {
-    display: block;
-    margin-bottom: 0.5rem;
-}
-
-input,
-textarea {
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-}
-
-input[type="submit"] {
-    background-color: #52057b;
-    color: #fff;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    background-color: #3b0355;
-}
-
-footer {
-    background-color: #333;
-    padding: 0.5rem;
-    color: #fff;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.review p {
+  margin-bottom: 10px;
 }

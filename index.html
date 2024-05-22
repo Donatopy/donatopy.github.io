@@ -3,64 +3,191 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Miguel Donado, a passionate Data Engineer specializing in data collection, transformation, analysis, and presentation.">
   <title>Portfolio - Miguel Donado</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-
-    <h1>Miguel Donado - Data Scientist</h1>
+    <div class="nav-buttons">
+      <a href="#projects">Projects</a>
+      <a href="Resume_MiguelDonado.pdf" download>CV</a>
+      <a href="#about-me">About Me</a>
+      <a href="#client-reviews">Reviews</a>
+    </div>
+    
+    
     <div class="social-icons">
-    <!-- Este es un comentario en HTML.
-      <a href="https://twitter.com/donatopy_" target="_blank"><img src="logotwitter.png" alt="Twitter"></a>
-      <a href="https://www.twitch.tv/donatopy" target="_blank"><img src="logotwitch.png" alt="Twitch"></a>   -->
-      <a href="https://www.linkedin.com/in/miguel-donado-mazarr%C3%B3n-g%C3%B3mez-98941212b/" target="_blank"><img src="logolinkedin.png" alt="LinkedIn"></a>
+      <a href="https://www.linkedin.com/in/migueldonado" target="_blank"><img src="logo_linkedin.png" alt="LinkedIn"></a>
+      <a href="https://www.upwork.com/freelancers/~01759dc253169f66bc" target="_blank"><img src="logo_upwork.png" alt="Upwork"></a>
     </div>
   </header>
   
   <main>
+    <section class="presentation">
+      <h1 class="mi-nombre">Miguel Donado</h1>
+      <p class="mi-puesto"><span class="data-engineer">Data Engineer</span></p>
+      <p class="mi-mission">Collect, transform, analyse and present data - from optimizing workflows to drive forward global transformation</p>
+      
+      <div class="info-container">
+        <div class="info">
+          <div class="grupo-info">
+            <div class="iconos">
+              <img src="icono1.png" alt="Collect Icon">
+            </div>
+            <div class="textos">
+              <p class="titulo">Collect</p>
+            </div>
+            <div class="parrafos">
+              <p class="parrafo">My strength lies in simplifying data collection through practical data engineering. Proficient in <span class="resaltado">Python</span> and <span class="resaltado">SQL</span>, I ensure a smooth and efficient process for gathering and managing data, laying a solid foundation for subsequent analysis.</p>
+            </div>
+          </div>
+          <div class="grupo-info">
+            <div class="iconos">
+              <img src="icono2.png" alt="Transform Icon">
+            </div>
+            <div class="textos">
+              <p class="titulo">Transform</p>
+            </div>
+            <div class="parrafos">
+              <p class="parrafo">During data transformation, I specialize in building <span class="resaltado">cloud</span>-based <span class="resaltado">ETL</span> <span class="resaltado">pipelines</span> and integrating <span class="resaltado">APIs</span>. I develop scalable and reliable data pipelines that streamline raw data into valuable insights.</p>
+            </div>
+          </div>
+          <div class="grupo-info">
+            <div class="iconos">
+              <img src="icono3.png" alt="Analyze Icon">
+            </div>
+            <div class="textos">
+              <p class="titulo"><strong>Analyse</strong></p>
+            </div>
+            <div class="parrafos">
+              <p class="parrafo">Using Python tools like <span class="resaltado">Pandas</span>, <span class="resaltado">PySpark</span> and <span class="resaltado">Matplotlib</span>, I efficiently process and visualize data. I have a growing interest in <span class="resaltado">machine learning</span> and experience with <span class="resaltado">Tableau</span> and <span class="resaltado">Power BI</span> for data visualization.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+
+        <!-- Primer proyecto -->
+        <div class="project">
+          <img src="icon_geochesstournaments.png" alt="Project 1" class="project-image">
+          <div class="project-details">
+            <div class="project-info">
+              <h3>GeoChessTournaments.com</h3>
+              <p>Interactive map that shows upcoming chess tournaments in your country. Personal project.</p>
+              <a href="https://geochesstournaments.com/" class="project-link">View Project</a>
+            </div>
+            <div class="technologies">
+              <img src="icon_python.png" alt="Python" title="Python">
+              <img src="icon_pandas.jpg" alt="Pandas" title="Pandas">
+              <img src="icon_selenium.png" alt="Selenium" title="Selenium">
+              <!-- Agrega más imágenes de iconos para cada tecnología utilizada -->
+            </div>
+          </div>
+        </div>
+        
+        <!-- Segundo proyecto -->
+        <div class="project">
+          <img src="icon_pubmed.png" alt="Project 2" class="project-image">
+          <div class="project-details">
+            <div class="project-info">
+              <h3>Scraping PUBMED</h3>
+              <p>Data Extraction from United States National Library of Medicine (NLM). Client project.</p>
+              <a href="https://example.com/scraping-web" class="project-link">View Project</a>
+            </div>
+            <div class="technologies">
+              <img src="icon_python.png" alt="Python" title="Python">
+              <img src="icon_pandas.jpg" alt="Pandas" title="Pandas">
+              <img src="icon_selenium.png" alt="Selenium" title="Selenium">
+              <img src="icon_beautifulsoup.png" alt="BeautifulSoup" title="BeautifulSoup">
+              <!-- Agrega más imágenes de iconos para cada tecnología utilizada -->
+            </div>
+          </div>
+        </div>        
+        
+        
+        <!-- Tercer proyecto -->
+        <div class="project">
+          <img src="icon_costco.png" alt="Project 3" class="project-image">
+          <div class="project-details">
+            <div class="project-info">
+              <h3>Scraping Costco</h3>
+              <p>Data Extraction from Costco supermarkets website. Client project. </p>
+              <a href="https://example.com/scraping-web" class="project-link">View Project</a>
+            </div>
+            <div class="technologies">
+              <img src="icon_python.png" alt="Python" title="Python">
+              <img src="icon_pandas.jpg" alt="Pandas" title="Pandas">
+              <img src="icon_beautifulsoup.png" alt="BeautifulSoup" title="BeautifulSoup">
+              <!-- Agrega más imágenes de iconos para cada tecnología utilizada -->
+            </div>
+          </div>
+        </div>        
+        
+        <!-- Cuarto proyecto -->
+        <div class="project">
+          <img src="icon_chesscom.png" alt="Project 4" class="project-image">
+          <div class="project-details">
+            <div class="project-info">
+              <h3>Chess.com Data extraction and analysis.</h3>
+              <p>Chess games extraction from chess.com API and subsequent analysis using Stockfish engine. Client Project.</p>
+              <a href="https://example.com/chess-com-api" class="project-link">View Project</a>
+            </div>
+            <div class="technologies">
+              <img src="icon_python.png" alt="Python" title="Python">
+              <img src="icon_pandas.jpg" alt="Pandas" title="Pandas">
+              <img src="icon_api.png" alt="API" title="API">
+              <img src="icon_stockfish.png" alt="Stockfish" title="Stockfish">
+              <!-- Agrega más imágenes de iconos para cada tecnología utilizada -->
+            </div>
+          </div>
+        </div>        
+        <!-- Quinto proyecto -->
+        <div class="project">
+          <img src="project5_image.png" alt="Project 5" class="project-image">
+          <div class="project-details">
+            <div class="project-info">
+              <h3>3D Visualizer</h3>
+              <p>Visualizer for .obj files. University coursework. </p>
+              <a href="https://geochesstournaments.com/" class="project-link">View Project</a>
+            </div>
+            <div class="technologies">
+              <img src="icon_python.png" alt="Python" title="Python">
+              <img src="icon_numpy.png" alt="Numpy" title="Numpy">
+              <!-- Agrega más imágenes de iconos para cada tecnología utilizada -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <section id="about-me" class="about-me">
+      <div class="text">
+        <img src="yo.png" alt="Miguel Donado" class="profile-image">
+        <div class="bio">
+          <h2>About me</h2>
+          <p>Passionate Data Engineer with over 2 years of experience in the field. Successfully served more than 8 satisfied clients, helping them with their data to drive business insights.</p>
+        </div>
+      </div>
+    </section>
+    
     <section id="client-reviews">
       <h2>Client Reviews</h2>
       <div class="review">
-        <p>"Miguel's talent and creativity saved our project. We were stuck in a complex task, feeling hopeless, but he found the best solution. His out-of-the-box thinking is impressive. Highly recommended freelancer – we'll hire Miguel again!" </p>
-        <p> Azeem Noor, Azeem Enterprises</p>
+        <p>"Miguel's talent and creativity saved our project. We were stuck in a complex task, feeling hopeless, but he found the best solution. His out-of-the-box thinking is impressive. Highly recommended freelancer – we'll hire Miguel again!"</p>
+        <p>Azeem Noor, Azeem Enterprises <img src="flag_uk.png" alt="UK Flag" class="flag"> Feb 2022</p>
       </div>      
       <div class="review">
-        <p>"Great experience working with Miguel! The task that probably turned out to be a bit more difficult than we had anticipated but he stuck with it and delivered the result I was looking for. Highly recommended!" </p>
-        <p> Neil Berkman, Xuku LLC</p>
+        <p>"Great experience working with Miguel! The task that probably turned out to be a bit more difficult than we had anticipated but he stuck with it and delivered the result I was looking for. Highly recommended!"</p>
+        <p>Neil Berkman, Xuku LLC <img src="flag_usa.jpg" alt="USA Flag" class="flag"> Jan 2023</p>
       </div>
-    </section>
-
-    <section id="Portfolio">
-      <h2>Portfolio</h2>
-      <div class="project" onclick="window.location.href='https://example.com/project1';">
-        <img src="project1_image.jpg" alt="Project 1" title="Description of Project 1">
-      </div>
-      <div class="project" onclick="window.location.href='https://example.com/project2';">
-        <img src="project2_image.jpg" alt="Project 2" title="Description of Project 2">
-      </div>
-    </section>
-
-    <section id="contact">
-      <h2>Get in touch</h2>
-      <form action="procesar_formulario.php" method="post">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
-
-          <label for="email">Email Address:</label>
-          <input type="email" id="email" name="email" required>
-
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-
-          <input type="submit" value="Submit">
-      </form>
     </section>
   </main>
-  
-  <footer>
-    <p>© 2024 Miguel Donado</p>
-  </footer>
-  <script src="script.js"></script>
 </body>
 </html>
